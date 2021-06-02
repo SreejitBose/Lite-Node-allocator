@@ -9,3 +9,5 @@ The script uses uptime utility of Linux to determine the load of each node in th
 ```python
 python3 lna.py <number of nodes> <number of cores per node>
 ```
+## Output
+The script creates a file named "host_file" which can be used in MPICH applications. 
