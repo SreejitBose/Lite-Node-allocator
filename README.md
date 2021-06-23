@@ -13,3 +13,4 @@ python3 lna.py <number of nodes> <number of cores per node>
 The script creates a file named "host_file" which can be used in MPICH applications at time of execution of the binary, like below.
 ```bash
 mpiexec –n <number of processes> -f host_file ./<binaryfile> 
+```
