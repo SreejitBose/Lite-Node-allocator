@@ -32,9 +32,8 @@ def thread_test(st,en):
             lock.acquire()
             count=count+1
             nodes.append(a)
-            per=(i/en)*100
             sys.stdout.write('\r')
-            sys.stdout.write("[+]Node added csews{}".format(i))
+            sys.stdout.write("[+]Node added csews{} ".format(i))
             sys.stdout.flush()
             lock.release()
 
@@ -49,10 +48,10 @@ count=0
 threadarr=[]
 numthreads=os.popen("nproc").read()
 numthreads=int(numthreads)
-chunk=int(88/numthreads)
+chunk=int(121/numthreads)
 for i in range(1,numthreads+1):
     if (i==numthreads):
-        thr = threadtester((chunk*(i-1)+1),89)
+        thr = threadtester((chunk*(i-1)+1),122)
     else:
         thr = threadtester((chunk*(i-1)+1),(chunk*i)+1)
     threadarr.append(thr)
