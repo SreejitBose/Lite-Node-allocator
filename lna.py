@@ -48,10 +48,10 @@ count=0
 threadarr=[]
 numthreads=os.popen("nproc").read()
 numthreads=int(numthreads)
-chunk=int(121/numthreads)
+chunk=int(124/numthreads)
 for i in range(1,numthreads+1):
     if (i==numthreads):
-        thr = threadtester((chunk*(i-1)+1),122)
+        thr = threadtester((chunk*(i-1)+1),125)
     else:
         thr = threadtester((chunk*(i-1)+1),(chunk*i)+1)
     threadarr.append(thr)
