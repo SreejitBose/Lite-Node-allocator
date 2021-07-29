@@ -2,7 +2,11 @@
 A simple script to generate host file for IITK csews cluster which can be used in MPICH applications. 
 The script uses uptime utility of Linux to determine the load of each node in the cluster and makes a list of nodes which are lightly loaded.
 
-
+## Requirements
+Passwordless ssh must be enabled in all nodes. Use the following command if not enabled already.
+```
+ssh-keygen
+```
 
 ## Usage
 
